@@ -1,0 +1,21 @@
+// Theme Primary Color
+$primary: #438ffe;
+// Mainly use for UI controls like Buttons
+$secondary: #83bcbd;
+// Mainly use for Normal Text color
+$gray: #adb3c0;
+// Mainly use in icons
+$success: #8bc38a;
+// Additional Shades of background color
+$light: #f8f8f8;
+$extra-light: #ffffff;
+// additional shades of fonts color
+$accent-light: #6ca7fd;
+$accent-dark: #160e4d;
+$accent-grey: #bfc3ce;
+// Dedicated for button text only
+$btn-text-primary: $extra-light;
+$body-bg: $light;
+$body-color: $accent-dark;
+$white: #ffffff;
+$theme-colors: ( "primary": $primary, "secondary": $secondary, "gray": $gray, "light": $light, );

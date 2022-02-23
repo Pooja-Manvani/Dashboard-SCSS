@@ -1,0 +1,19 @@
+primary #438ffe blue
+
+success #8bc38a green cart icon
+
+danger #fe764b red
+
+progress bar green #83bcbd
+
+body bg #f8f8f8
+
+grey #adb3c0
+
+bg sidebar header #ffffff
+
+fonts #160e4d
+
+active fonts #6ca7fd
+
+grey fonts #bfc3ce  

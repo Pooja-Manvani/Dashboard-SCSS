@@ -1,0 +1,16 @@
+// Header area style
+.header {
+    font-size: $header-font-size;
+}
+
+// .profile-img {
+//     height: 40px;
+//     width: 40px;
+//     border-radius: $rounded-circle;
+// }
+.profile-img-size {
+    height: 40px;
+    width: 40px;
+    size: $profile-img-size;
+    border-radius: $rounded-circle;
+}
