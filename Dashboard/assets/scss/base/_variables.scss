@@ -1,5 +1,5 @@
 // All the SCSS Variables goes here
-$header-font-size: 1rem;
+
 // Fonts
 $font-size-base: 1rem;
 $font-family: 'Josefin Sans',
@@ -9,8 +9,12 @@ $font-bold: 500;
 $border-radius: 12px;
 $rounded-circle: 50%;
 // Header
-$sidebar-nav-padding-x: 1.5rem;
-$sidebar-nav-padding-y: 1rem;
-$badge-size: 6px;
 $profile-img-size: 30px;
-$badge-icon-size: 14px;
+$header-font-size: 1.5rem;
+$header-padding-x: 40px;
+$header-padding-y: 1.5rem;
+$line-gray-1: 1px solid $grey-line;
+
+// Sidebar font size
+$sidebar-font-size: 1.5rem;
+

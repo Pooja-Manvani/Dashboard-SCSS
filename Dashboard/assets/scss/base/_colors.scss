@@ -13,9 +13,13 @@ $extra-light: #ffffff;
 $accent-light: #6ca7fd;
 $accent-dark: #160e4d;
 $accent-grey: #bfc3ce;
+// line color
+$grey-line: #c9c5c5;
 // Dedicated for button text only
 $btn-text-primary: $extra-light;
 $body-bg: $light;
 $body-color: $accent-dark;
 $white: #ffffff;
 $theme-colors: ( "primary": $primary, "secondary": $secondary, "gray": $gray, "light": $light, );
+// icons
+$icon-aside: $gray

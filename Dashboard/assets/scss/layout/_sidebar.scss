@@ -1,0 +1,23 @@
+.sidebar{
+    background-color: $extra-light;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+
+
+    .sidebar-icons{
+        font-size: $sidebar-font-size;
+        padding: 20px;
+        color: $gray;
+            
+    }
+
+    ul{
+        list-style-type: none;
+
+        li{
+            padding: 15px;
+        }
+    }
+    
+}

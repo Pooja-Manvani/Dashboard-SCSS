@@ -1,1 +1,17 @@
 // Card styles goes here
+
+.card{
+    height: 240px;
+    width: 295px;
+    padding: 10px;
+    background-color: $extra-light;
+
+    .card-icon-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            width: 60px;
+            background-color: rgb(192, 192, 192);
+    }
+}
