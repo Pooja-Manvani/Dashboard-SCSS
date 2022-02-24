@@ -1,10 +1,14 @@
 // Card styles goes here
 
 .card{
-    height: 240px;
-    width: 295px;
-    padding: 10px;
-    background-color: $extra-light;
+    
+    width: 25%;
+    padding: 12px;
+    
+    .card-box{
+        padding: 10px;
+        background-color: $extra-light;
+    }
 
     .card-icon-box{
             display: flex;
@@ -12,6 +16,13 @@
             align-items: center;
             height: 60px;
             width: 60px;
-            background-color: rgb(192, 192, 192);
+            background-color: rgba(168, 165, 165, 0.212);
+            font-size: $font-size-base;
+
+    .card-font{
+        font: $card-font;
+    } 
+            
+        
     }
 }
