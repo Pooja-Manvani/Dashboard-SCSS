@@ -6,6 +6,8 @@ $secondary: #83bcbd;
 $gray: #adb3c0;
 // Mainly use in icons
 $success: #8bc38a;
+
+$danger: rgb(240, 70, 18);
 // Additional Shades of background color
 $light: #f8f8f8;
 $extra-light: #ffffff;
@@ -13,14 +15,53 @@ $extra-light: #ffffff;
 $accent-light: #6ca7fd;
 $accent-dark: #160e4d;
 $accent-grey: #bfc3ce;
+
+$pink: #fa8fa1;
 // line color
 $grey-line: #c9c5c5;
+
+// icons
+$icon-aside: $gray;
+
 // Dedicated for font color
 $btn-text-primary: $extra-light;
 $body-bg: $light;
 $body-color: $accent-dark;
 $white: #ffffff;
-$theme-colors: ( "primary": $primary, "secondary": $secondary, "gray": $gray, "light": $light, );
-// icons
-$icon-aside: $gray;
+$theme-colors: ( "primary": $primary,"success": $success, "secondary": $secondary, "gray": $gray, "light": $light, "pink": $pink, "danger": $danger);
 
+@each $key, $val in $theme-colors {
+    .text-#{$key} {
+      color: $val;
+    }
+  }
+
+  @each $key, $val in $theme-colors {
+    .icon-#{$key} {
+      color: $val;
+    }
+  }
+  
+  @each $key, $val in $theme-colors {
+    .icon-card-#{$key} {
+      color: $val;
+      background-color: rgba($val,0.1);
+      
+    }
+  }
+  @each $key, $val in $theme-colors{
+    .card-#{$key}{
+      &:hover{
+        .card-box{
+        background-color: $val;
+        }
+        .card-title,.card-timeframe,.card-counts,.card-icon-box-1,.card-icon-box{
+          color: $light;
+        }
+        .card-icon-box{
+          background-color: lighten($val,4%)
+        }
+  
+      }
+    }
+  }

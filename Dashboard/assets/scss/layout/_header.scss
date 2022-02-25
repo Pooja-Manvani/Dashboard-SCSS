@@ -15,7 +15,7 @@
     }
 
     .search-box {
-        padding: $header-padding-x;
+        padding: $header-padding;
         
         .search{
             padding: 5px;
@@ -45,7 +45,28 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        position: relative;
+
+        & .icon-message:after {
+            content: " ";
+            position: absolute;
+            background: $danger;
+            border-radius: 50%;
+            font-size: .5rem;
+            height: 5px;
+            width: 5px;
+          }
+
+        & .icon-bell:after {
+            content: " ";
+            position: absolute;
+            background: $danger;
+            border-radius: 50%;
+            font-size: .5rem;
+            height: 5px;
+            width: 5px;
+          
+        }   
     }
 
     .profile-img-size {
@@ -56,6 +77,8 @@
     }
 
 }
+
+
 
 
     

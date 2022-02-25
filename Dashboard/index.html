@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="wrapper d-flex h-100 flex-column ">
+    <div class="wrapper d-flex h-100 flex-column overflow-hidden">
         <!-- Header section starts -->
         <header class="header">
             <div class="d-flex justify-content-between">
@@ -50,11 +50,11 @@
         <!-- Header section ends -->
 
 
-        <div class="flex-grow-1 d-flex">
+        <div class="flex-grow-1 d-flex overflow-hidden">
             <!-- sidebar section starts -->
-            <aside class="sidebar">
+            <aside class="sidebar overflow-hidden">
                 <!-- Nav bar-1 -->
-                <nav class="sidebar-icons flex-grow-1">
+                <nav class="sidebar-icons flex-grow-1 overflow-auto">
 
                     <ul>
                         <li>
@@ -88,151 +88,216 @@
 
 
             <!-- main section starts -->
-            <main class="flex-grow-1 main" >
+            <main class="flex-grow-1 d-flex flex-column main overflow-auto" >
 
-
+                <!-- Title -->
                 <div>
                     <h1>Dashboard</h1>
                 </div>
-                <!-- Card section -->
-                <div class="card-wrapper d-flex">
-                    <div class="card">
-                        <div class="card-box">
-                            <div class="d-flex justify-content-between">
-                                    <div class="card-icon-box">
-                                        <span class="icon-eye"></span>
-                                    </div>
-                                    <div class="card-icon-box">
-                                        <span class="icon-Vector-2"></span>
-                                    </div>
+
+                    <!-- Card section -->
+                    <div class="card-wrapper d-flex">
+                    
+                        <!-- Card-1 -->
+                        <div class="card card-primary">
+                            <div class="card-box ">
+                                <div class="d-flex justify-content-between ">
+                                        <div class="card-icon-box icon-card-primary icon-primary">
+                                            <span class="icon-eye"></span>
+                                        </div>
+                                        <div class="card-icon-box-1 ">
+                                            <span class="icon-Vector-2"></span>
+                                        </div>
+                                </div>
+                            <div class="padding-10">
+                                <h5 class="card-title">Total view</h5>
+                                <p class="card-counts">308.786</p>
+                                
                             </div>
-                            <div class="card-font">Total view</div>
-                            <div>308.786</div>
+                            <p class="card-timeframe">start from 1 jan 2022</p>
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="card-box">
+                    <!-- Card-2 -->
+                    <div class="card card-success">
+                        <div class="card-box ">
                             <div class="d-flex justify-content-between">
-                                    <div class="card-icon-box">
+                                    <div class="card-icon-box icon-card-success icon-success">
                                         <span class="icon-bag-shopping"></span>
                                     </div>
-                                    <div class="card-icon-box">
+                                    <div class="card-icon-box-1 ">
                                         <span class="icon-Vector-1"></span>
                                     </div>
                             </div>
-                            <div>Total view</div>
-                            <div>308.786</div>
+                            <div class="padding-10">
+                                <h5 class="card-title">Total products</h5>
+                                <p class="card-counts">10.820</p>
+                                
+                            </div>
+                            <p class="card-timeframe">
+                                <span class="text-primary">+ Add new projects</span>
+                            </p>
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="card-box">
+                    <!-- Card-3 -->
+                    <div class="card card-primary">
+                        <div class="card-box ">
                             <div class="d-flex justify-content-between">
-                                    <div class="card-icon-box">
+                                    <div class="card-icon-box icon-card-primary icon-primary">
                                         <span class="icon-user-group"></span>
                                     </div>
-                                    <div class="card-icon-box">
+                                    <div class="card-icon-box-1 ">
                                         <span class="icon-Vector-2"></span>
                                     </div>
                             </div>
-                            <div>Total view</div>
-                            <div>308.786</div>
+                            <div class="padding-10">
+                                <h5 class="card-title">Total users</h5>
+                                <p class="card-counts">8.425</p> 
+                            </div>
+                            <p class="card-timeframe">New users noted every week</p>
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="card-box">
+                    <!-- Card-4 -->
+                    <div class="card card-secondary">
+                        <div class="card-box ">
                             <div class="d-flex justify-content-between">
-                                    <div class="card-icon-box">
+                                    <div class="card-icon-box icon-card-secondary icon-secondary">
                                         <span class="icon-cart"></span>
                                     </div>
-                                    <div class="card-icon-box">
+                                    <div class="card-icon-box-1 ">
                                         <span class="icon-Vector-1"></span>
                                     </div>
                             </div>
-                            <div>Total view</div>
-                            <div>308.786</div>
+                            <div class="padding-10">
+                                <h5 class="card-title">Total sells</h5>
+                                <p class="card-counts">1.028.623</p>
+                                
+                            </div>
+                            <p class="card-timeframe">start from 1 jan 2022</p>
                         </div>
                     </div>
+
                 </div>
                 <!-- Card section ends -->
 
-                <div class="wrapper d-flex justify-content-between" style="padding-top: 20px; height: 100%;">
+                <div class="product-wrapper d-flex justify-content-between overflow-hidden">
                     <!-- Product table section -->
-                    <div class="table-body" style="width: 63%; height: 80%; border: 1px solid rebeccapurple;">
-                        <table style="width: 55%; height: 80%;">
-                            <thead>
-                                <th>No</th>
-                                <th>.</th>
-                                <th>Name</th>
-                                <th>status</th>
-                                <th>Sold</th>
-                                <th>View</th>
-                            </thead>
-                            <tbody>
+                    <div  class="table-wrapper d-flex flex-column overflow-hidden">
+                        <div>
+                            <table class="table">
+                                <!-- table header -->
+                                <thead class="table-header">
+                                    <th><h6>No</h6></th>
+                                    <th><h6> </h6></th>
+                                    <th><h6>Product name</h6></th>
+                                    <th><h6>status</h6></th>
+                                    <th><h6>Sold</h6></th>
+                                    <th><h6>View</h6></th>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="overflow-vertical">
+                            <table class="table">
+                            <!-- table body -->
+                            <tbody class="table-body">
                                 <tr>
                                     <td>1</td>
                                     <td>
-                                        <figure>
-                                            <img src="" alt="">
+                                        <figure class="overflow-hidden">
+                                            <img class="table-product-img" src="assets/images/istockphoto.jpg" alt="image">
                                         </figure>
                                     </td>
                                     <td>xyz</td>
-                                    <td>Active</td>
+                                    <td class="text-primary">Active</td>
                                     <td>10</td>
                                     <td>320</td>
                                 </tr>
                                 <tr>
                                     <td>1</td>
                                     <td>
-                                        <figure>
-                                            <img src="" alt="">
+                                        <figure class="overflow-hidden">
+                                            <img class="table-product-img" src="assets/images/istockphoto.jpg" alt="image">
                                         </figure>
                                     </td>
                                     <td>xyz</td>
-                                    <td>Active</td>
+                                    <td class="text-primary">Active</td>
                                     <td>10</td>
                                     <td>320</td>
                                 </tr>
                                 <tr>
                                     <td>1</td>
                                     <td>
-                                        <figure>
-                                            <img src="" alt="">
+                                        <figure class="overflow-hidden">
+                                            <img class="table-product-img" src="assets/images/istockphoto.jpg" alt="image">
                                         </figure>
                                     </td>
                                     <td>xyz</td>
-                                    <td>Active</td>
+                                    <td class="text-primary">Active</td>
                                     <td>10</td>
                                     <td>320</td>
                                 </tr>
                                 <tr>
                                     <td>1</td>
                                     <td>
-                                        <figure>
-                                            <img src="" alt="">
+                                        <figure class="overflow-hidden">
+                                            <img class="table-product-img" src="assets/images/istockphoto.jpg" alt="image">
                                         </figure>
                                     </td>
                                     <td>xyz</td>
-                                    <td>Active</td>
+                                    <td class="text-primary">Active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <figure class="overflow-hidden">
+                                            <img class="table-product-img" src="assets/images/istockphoto.jpg" alt="image">
+                                        </figure>
+                                    </td>
+                                    <td>xyz</td>
+                                    <td class="text-primary">Active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <figure class="overflow-hidden">
+                                            <img class="table-product-img" src="assets/images/istockphoto.jpg" alt="image">
+                                        </figure>
+                                    </td>
+                                    <td>xyz</td>
+                                    <td class="text-primary">Active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <figure class="overflow-hidden">
+                                            <img class="table-product-img" src="assets/images/istockphoto.jpg" alt="image">
+                                        </figure>
+                                    </td>
+                                    <td>xyz</td>
+                                    <td class="text-primary">Active</td>
                                     <td>10</td>
                                     <td>320</td>
                                 </tr>
                             </tbody>
                         </table>
+                        </div>
                     </div>
                     <!-- Product table section ends -->
 
                     <!-- Product progress bar -->
-                    <div class="Progress-bar" style="width: 35%; height: 80%; border: 1px solid blue;">
+                    <div class="Progress-bar" style="width: 35%; height: 100%; border: 1px solid blue;">
                         View & sell
                     </div>
                     <!-- Product progress bar ends -->
                 </div>
-
-
-
 
             </main>
             <!-- main section ends -->

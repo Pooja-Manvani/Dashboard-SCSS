@@ -1,28 +1,76 @@
 // Card styles goes here
 
-.card{
-    
-    width: 25%;
-    padding: 12px;
-    
-    .card-box{
-        padding: 10px;
-        background-color: $extra-light;
-    }
+.card-wrapper {
+    margin: 0 -10px ;
+    flex-wrap: wrap;
+}
+    .card{
+        margin-right: 0 10px;
+        width: 25%;
+        padding-left: .75rem;
 
-    .card-icon-box{
+        @include for-laptop {
+            background-color: red;
+            width: 50%;
+        }
+
+        .card-icon-box{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 60px;
+                    width: 60px;
+                    margin: 10px;
+                    
+                    font-size: $font-size-base;
+        }
+
+        .card-icon-box-1{
             display: flex;
             justify-content: center;
             align-items: center;
             height: 60px;
             width: 60px;
-            background-color: rgba(168, 165, 165, 0.212);
+            margin: 10px;
             font-size: $font-size-base;
-
-    .card-font{
-        font: $card-font;
-    } 
+}
+        
+        &-title {
+            font-weight: 300;
+            padding: .75rem 0;
+            color: $accent-grey;
+        }
+        &-counts {
+            padding: .70 rem 0;
+            padding-bottom: 10px;
+        }
+        &-timeframe {
+            border-top: $line-gray-1;
+            color: $accent-grey;
+            padding-top: 10px;
+            font-size: medium;
+        }
+        
+        .card-box{
+            padding: 10px;
+            background-color: $extra-light;
+        }
+    
+        // .card-icon-box{
+        //         display: flex;
+        //         justify-content: center;
+        //         align-items: center;
+        //         height: 60px;
+        //         width: 60px;
+        //         background-color: rgba(168, 165, 165, 0.212);
+        //         font-size: $font-size-base;
+    
+        // .card-font{
+        //     padding: 1rem;
+        //     // font: $card-font;
+        // } 
+                
             
+        // }
         
     }
-}

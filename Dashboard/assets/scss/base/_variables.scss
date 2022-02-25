@@ -1,23 +1,23 @@
 // All the SCSS Variables goes here
 
 // Fonts
-$font-size-base: 2rem;
+$font-size-base: 1.5rem;
 $font-family: 'Josefin Sans',
 sans-serif;
-$font-bold: 500;
+// $font-bold: 500;
 // Border-radius
 $border-radius: 12px;
 $rounded-circle: 50%;
 // Header
 $profile-img-size: 30px;
 $header-font-size: 1.5rem;
-$header-padding-x: 40px;
-$header-padding-y: 1.5rem;
+$header-padding: 20px;
+// $header-padding-y: 1.5rem;
 $line-gray-1: 1px solid $grey-line;
 
 // Sidebar font size
 $sidebar-font-size: 1.5rem;
 
 // Card
-$card-font: $accent-grey,small;
+// $card-font: $accent-grey,small;
 
