@@ -3,32 +3,37 @@
     font-size: $header-font-size;
     background-color: $extra-light;
     border-bottom: $line-gray-1;
-    
-
+    @include responsive('x-sm') {
+        .search .search-box .search-icon {
+            visibility: hidden;
+        }
+        .brand-logo {
+            width: 20px;
+            padding: 0;
+            display: flex;
+            align-content: center;
+        }
+    }
     .brand-logo {
-        
         width: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
-       
     }
-
     .search-box {
         padding: $header-padding;
-        
-        .search{
+        .search {
             padding: 5px;
             width: 350px;
             height: 45px;
             background-color: $light;
             outline: 0px;
             border: none;
-            &::placeholder{
+            &::placeholder {
                 color: $accent-grey;
             }
         }
-        .search-icon{
+        .search-icon {
             background-color: $light;
             color: $gray;
             font-size: 1rem;
@@ -37,8 +42,7 @@
             padding: 5px;
         }
     }
-
-    .header-icon{
+    .header-icon {
         font-size: $header-font-size;
         color: $gray;
         padding: 10px;
@@ -46,7 +50,6 @@
         justify-content: center;
         align-items: center;
         position: relative;
-
         & .icon-message:after {
             content: " ";
             position: absolute;
@@ -55,8 +58,7 @@
             font-size: .5rem;
             height: 5px;
             width: 5px;
-          }
-
+        }
         & .icon-bell:after {
             content: " ";
             position: absolute;
@@ -65,23 +67,12 @@
             font-size: .5rem;
             height: 5px;
             width: 5px;
-          
-        }   
+        }
     }
-
     .profile-img-size {
         height: 40px;
         width: 40px;
         size: $profile-img-size;
         border-radius: $rounded-circle;
     }
-
 }
-
-
-
-
-    
-
-    
-

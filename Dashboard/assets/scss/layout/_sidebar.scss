@@ -3,21 +3,26 @@
     width: 100px;
     display: flex;
     flex-direction: column;
-    align-items: center ;
+    align-items: center;
     position: relative;
-    transition: 0.4s all;
-
+    transition: all ease-in-out 0.4s;
+    @include responsive('x-sm') {
+        .sidebar {
+            width: 0px;
+        }
+        .sidebar-icons {
+            visibility: hidden;
+        }
+    }
     .nav-toggle {
         position: absolute;
         left: 100%;
         top: 50%;
-
-        .icon-gray {
-            display:block;
+        .icon {
+            display: block;
             transform: rotate(180deg);
         }
     }
-
     .sidebar-icons {
         font-size: $sidebar-font-size;
         padding: 20px;
@@ -26,10 +31,8 @@
         visibility: visible;
         transition: 0.4s all;
     }
-
     ul {
         list-style-type: none;
-
         li {
             padding: 15px;
         }
@@ -39,10 +42,9 @@
 #toggleNav {
     display: none;
     &:checked {
-        & + .sidebar {
+        &+.sidebar {
             width: 0;
             transform: translateX(-100%);
-
             .sidebar-icons {
                 transform: translateX(100%);
                 opacity: 0;
