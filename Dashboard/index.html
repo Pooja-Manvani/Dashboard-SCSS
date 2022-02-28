@@ -24,7 +24,7 @@
                     <!--search-box -->
                     <div class="d-flex search-box">
                         <label for="searchInput" class="search-icon"><span class="icon-search"></span></label>
-                        <input  type="search" class="search" id="searchInput " placeholder="Search for transaction,item,etc...">
+                        <input  type="search" class="search" id="searchInput" placeholder="Search for transaction,item,etc...">
                         <button class="btn btn-primary">Search</button>
                     </div>
                 </div>
@@ -51,23 +51,24 @@
 
 
         <div class="flex-grow-1 d-flex overflow-hidden">
+            <input type="checkbox" id="toggleNav">
             <!-- sidebar section starts -->
-            <aside class="sidebar overflow-hidden">
+            <aside class="sidebar">
+                <label for="toggleNav" class="icon-gray nav-toggle"><i class="icon-arrow_forward"></i></label>             
                 <!-- Nav bar-1 -->
                 <nav class="sidebar-icons flex-grow-1 overflow-auto">
-
                     <ul>
                         <li>
-                            <span class="icon-message"></span>
+                            <span class="sidebar-icons icon-message"></span>
                         </li>
                         <li>
-                            <span class="icon-cart"></span>
+                            <span class="sidebar-icons icon-cart"></span>
                         </li>
                         <li>
-                            <span class="icon-notepad"></span>
+                            <span class="sidebar-icons icon-notepad"></span>
                         </li>
                         <li>
-                            <span class="icon-warning"></span>
+                            <span class="sidebar-icons icon-warning"></span>
                         </li>
                     </ul>
                 </nav>
@@ -76,22 +77,25 @@
                 <nav class="sidebar-icons">
                     <ul>
                         <li>
-                            <span class="icon-settings"></span>
+                            <span class="sidebar-icons icon-settings"></span>
                         </li>
                         <li>
-                            <span class="icon-sign-out"></span>
+                            <span class="sidebar-icons icon-sign-out"></span>
                         </li>
                     </ul>
                 </nav>
             </aside>
             <!-- sidebar section ends -->
 
+            
 
             <!-- main section starts -->
             <main class="flex-grow-1 d-flex flex-column main overflow-auto" >
-
+                
+                 
+               
                 <!-- Title -->
-                <div>
+                <div class="main-title">
                     <h1>Dashboard</h1>
                 </div>
 

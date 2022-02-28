@@ -1,7 +1,13 @@
 
+
 .main{
     background-color: $light;
     padding: 35px;
+
+    .main-title{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 .product-wrapper{

@@ -1,19 +1,18 @@
 // Card styles goes here
 
 .card-wrapper {
-    margin: 0 -10px ;
+    // margin: 0 -22px;
     flex-wrap: wrap;
 }
     .card{
         margin-right: 0 10px;
-        width: 25%;
-        padding-left: .75rem;
-
-        @include for-laptop {
-            background-color: red;
-            width: 50%;
+        flex-basis: 25%;
+        padding-left: 24px;
+        &:first-child{
+            padding-left: 0%;
         }
-
+        
+        
         .card-icon-box{
                     display: flex;
                     justify-content: center;
@@ -52,8 +51,9 @@
         }
         
         .card-box{
-            padding: 10px;
+            
             background-color: $extra-light;
+            padding: 18px;
         }
     
         // .card-icon-box{
@@ -73,4 +73,11 @@
             
         // }
         
+    }
+
+    // media query for xxl
+    @include responsive ('md'){
+        .card {
+            flex-basis: 50%;
+        }
     }
