@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCSS-Assessment-Dashboard</title>
+
+    <link rel="stylesheet" href="assets/icon/style.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper d-flex h-100 flex-column overflow-hidden">
+        <!-- Header section starts -->
+        <header class="header">
+            <div class="d-flex justify-content-between">
+                <!-- Tally-scan-Title -->
+                <div class=" d-flex align-item-center">
+                    <span class="main-title">Tally scan</span>
+                    <div class="header-title">
+                        Dashboard
+                    </div>
+                </div>
+
+                <!-- icons & profile -->
+                <div class="d-flex align-item-center">
+                    <div class="header-icon">
+                        <span class="icon-bell"></span>
+                    </div>
+
+                    <div class="header-icon">
+                        <figure class="overflow-hidden">
+                            <img class="profile-img-size" src="assets/images/dwayne-the-rock-.jpg" alt="profile img">
+                        </figure>
+                    </div>
+
+                    <div>
+                        <h6 class="profile-name">John smith</h6>
+                    </div>
+
+                    <div class="header-icon">
+                        <span class="icon-down"></span>
+                    </div>
+                </div>
+        </header>
+        <!-- Header section end -->
+
+        <!-- Sidebar & main start -->
+        <div class=" d-flex flex-grow-1 overflow-auto">
+            <input type="checkbox" id="toggleNav">
+
+            <!-- Sidebar section starts -->
+            <aside class="sidebar h-100 overflow-hidden">
+                <label for="toggleNav" class="icon-purple nav-toggle"><i class="icon-arrow-circle"></i></label>
+                <!-- Navigation-1 start -->
+                <div>
+                    <nav class="nav-general">
+                        <h4>GENERAL</h4>
+                        <ul>
+                            <li>
+                                <span class="sidebar-icons icon-search"></span>
+                                <span class="sidebar-icons-text">Search</span>
+                            </li>
+                            <li>
+                                <span class="sidebar-icons icon-bell"></span>
+                                <span class="sidebar-icons-text">Alert</span>
+                            </li>
+                            <li>
+                                <span class="sidebar-icons icon-tag"></span>
+                                <span class="sidebar-icons-text">Tags</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Navigation-21 end -->
+
+                <!-- Navigation-2 start-->
+                <div>
+                    <nav class="nav-others">
+                        <h4>OTHERS</h4>
+                        <ul>
+                            <li>
+                                <span class="sidebar-icons icon-setting"></span>
+                                <span class="sidebar-icons-text">Settings</span>
+                            </li>
+                            <li>
+                                <span class="sidebar-icons icon-sun"></span>
+                                <span class="sidebar-icons-text">Tips</span>
+                            </li>
+                            <li>
+                                <span class="sidebar-icons icon-trash"></span>
+                                <span class="sidebar-icons-text">Trash</span>
+                            </li>
+                            <li>
+                                <span class="sidebar-icons icon-log-out"></span>
+                                <span class="sidebar-icons-text">Log out</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Navigation-2 end -->
+            </aside>
+            <!-- Sidebar section end -->
+
+            <!-- Main section starts -->
+            <div class="wrapper d-flex flex-column main flex-grow-1 container h-100 overflow-auto">
+                <!-- Filter-Button -->
+                <div class="d-flex justify-content-end padding-left">
+                    <button class="btn"><i class="btn-icon icon-white icon-filter"></i>Filter</button>
+                </div>
+
+                <!-- start: Card Section-->
+                <div class="d-flex card-container padding-10 overflow-hidden">
+                    <div class="card-wrapper">
+                        <div class="card icon-card-grey">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <div class="card-title-text">Scans</div>
+                                    <div>350</div>
+                                </div>
+                                <div class="d-flex inner-card card-icon card-logo icon-card-grey">
+                                    <div class="icon-barcode1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card icon-card-primary">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <div class="card-title-text">Lists</div>
+                                    <div>350</div>
+                                </div>
+                                <div class="d-flex inner-card card-icon card-logo icon-card-primary">
+                                    <div class="icon-list"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card icon-card-secondary">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <div class="card-title-text">Costs</div>
+                                    <div>350</div>
+                                </div>
+                                <div class="d-flex inner-card card-icon card-logo icon-card-secondary">
+                                    <div class="icon-moneybag"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card icon-card-warning">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <div class="card-title-text">Buy Now</div>
+                                    <div>350</div>
+                                </div>
+                                <div class="d-flex inner-card card-icon card-logo icon-card-warning">
+                                    <div class="icon-cart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card icon-card-purple">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <div class="card-title-text">Buy Cheaper</div>
+                                    <div>350</div>
+                                </div>
+                                <div class="d-flex inner-card card-icon card-logo icon-card-purple">
+                                    <div class="icon-dollar-sign"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card icon-card-danger">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <div class="card-title-text">Buy Healthier</div>
+                                    <div>350</div>
+                                </div>
+                                <div class="d-flex inner-card card-icon card-logo icon-card-danger">
+                                    <div class="icon-heartbeat"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End: Card Section-->
+                <!-- Activity-title -->
+                <h3 class="padding-10 padding-bottom"> Recent Activity</h3>
+                <!-- Activity-table-start -->
+                <div class="overflow-auto">
+                    <table class="w-100 table overflow-hidden">
+
+                        <thead class="header-text">
+                            <th scope="col">Item <i class="icon-down icon-grey"></i></th>
+                            <th scope="col">Date <i class="icon-down icon-grey"></i></th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Est. Cost <i class="icon-down icon-grey"></i></th>
+                            <th scope="col">Last <i class="icon-down icon-grey"></i></th>
+                            <th scope="col">List <i class="icon-down icon-grey"></i></th>
+                            <th scope="col">Auto</th>
+                            <th scope="col">Buy Now</th>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="d-flex align-item-left">
+                                    <figure>
+                                        <img class="table-image" src="/assets/images/peanut-butter.png">Skippy Peanut
+                                        Butter 160z
+                                    </figure>
+                                </td>
+                                <td> 07 Nov, 8:35pm </td>
+                                <td>
+                                    <div class="text-danger type-danger"> Discarded </div>
+                                </td>
+                                <td>$40.27</td>
+                                <td> 18 Aug </td>
+                                <td> Grocery </td>
+                                <td>No</td>
+                                <td> Amazon </td>
+                            </tr>
+
+                            <tr>
+                                <td class="d-flex align-item-left">
+                                    <figure>
+                                        <img class="table-image" src="/assets/images/peanut-butter.png">Skippy Peanut
+                                        Butter 160z
+                                    </figure>
+                                </td>
+                                <td> 07 Nov, 8:35pm </td>
+                                <td>
+                                    <div class="text-danger type-danger"> Discarded </div>
+                                </td>
+                                <td>$40.27</td>
+                                <td> 18 Aug </td>
+                                <td> Grocery </td>
+                                <td>No</td>
+                                <td> Amazon </td>
+                            </tr>
+
+                            <tr>
+                                <td class="d-flex align-item-left">
+                                    <figure>
+                                        <img class="table-image" src="/assets/images/peanut-butter.png">Skippy Peanut
+                                        Butter 160z
+                                    </figure>
+                                </td>
+                                <td> 07 Nov, 8:35pm </td>
+                                <td>
+                                    <div class="text-primary type-primary"> want </div>
+                                </td>
+                                <td>$40.27</td>
+                                <td> 18 Aug </td>
+                                <td> Grocery </td>
+                                <td>No</td>
+                                <td> Amazon </td>
+                            </tr>
+
+                            <tr>
+                                <td class="d-flex align-item-left">
+                                    <figure>
+                                        <img class="table-image" src="/assets/images/peanut-butter.png">Skippy Peanut
+                                        Butter 160z
+                                    </figure>
+                                </td>
+                                <td> 07 Nov, 8:35pm </td>
+                                <td>
+                                    <div class="text-warning type-warning"> waiting</div>
+                                </td>
+                                <td>$40.27</td>
+                                <td> 18 Aug </td>
+                                <td> Grocery </td>
+                                <td>No</td>
+                                <td> Amazon </td>
+                            </tr>
+
+                            <tr>
+                                <td class="d-flex align-item-left">
+                                    <figure>
+                                        <img class="table-image" src="/assets/images/peanut-butter.png">Skippy Peanut
+                                        Butter 160z
+                                    </figure>
+                                </td>
+                                <td> 07 Nov, 8:35pm </td>
+                                <td>
+                                    <div class="text-danger type-danger"> Discarded </div>
+                                </td>
+                                <td>$40.27</td>
+                                <td> 18 Aug </td>
+                                <td> Grocery </td>
+                                <td>No</td>
+                                <td> Amazon </td>
+                            </tr>
+
+                            <tr>
+                                <td class="d-flex align-item-left">
+                                    <figure>
+                                        <img class="table-image" src="/assets/images/peanut-butter.png">Skippy Peanut
+                                        Butter 160z
+                                    </figure>
+                                </td>
+                                <td> 07 Nov, 8:35pm </td>
+                                <td>
+                                    <div class="text-grey type-grey">Cancelled</div>
+                                </td>
+                                <td>$40.27</td>
+                                <td> 18 Aug </td>
+                                <td> Grocery </td>
+                                <td>No</td>
+                                <td> Amazon </td>
+                            </tr>
+
+                            <tr>
+                                <td class="d-flex align-item-left">
+                                    <figure>
+                                        <img class="table-image" src="/assets/images/peanut-butter.png">Skippy Peanut
+                                        Butter 160z
+                                    </figure>
+                                </td>
+                                <td> 07 Nov, 8:35pm </td>
+                                <td>
+                                    <div class="text-primary type-primary"> want </div>
+                                </td>
+                                <td>$40.27</td>
+                                <td> 18 Aug </td>
+                                <td> Grocery </td>
+                                <td>No</td>
+                                <td> Amazon </td>
+                            </tr>
+
+                            <tr>
+                                <td class="d-flex align-item-left">
+                                    <figure>
+                                        <img class="table-image" src="/assets/images/peanut-butter.png">Skippy Peanut
+                                        Butter 160z
+                                    </figure>
+                                </td>
+                                <td> 07 Nov, 8:35pm </td>
+                                <td>
+                                    <div class="text-primary type-primary"> want </div>
+                                </td>
+                                <td>$40.27</td>
+                                <td> 18 Aug </td>
+                                <td> Grocery </td>
+                                <td>No</td>
+                                <td> Amazon </td>
+                            </tr>
+
+                            <tr>
+                                <td class="d-flex align-item-left">
+                                    <figure>
+                                        <img class="table-image" src="/assets/images/peanut-butter.png">Skippy Peanut
+                                        Butter 160z
+                                    </figure>
+                                </td>
+                                <td> 07 Nov, 8:35pm </td>
+                                <td>
+                                    <div class="text-primary type-primary"> want </div>
+                                </td>
+                                <td>$40.27</td>
+                                <td> 18 Aug </td>
+                                <td> Grocery </td>
+                                <td>No</td>
+                                <td> Amazon </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+                <!-- Activity-table-end -->
+            </div>
+            <!-- Main section end -->
+        </div>
+        <!-- Sidebar & main end -->
+    </div>
+</body>
+</html>

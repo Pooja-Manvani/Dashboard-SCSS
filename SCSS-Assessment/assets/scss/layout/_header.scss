@@ -1,0 +1,48 @@
+// Header area style
+.header {
+    padding: 10px;
+    background-color: $white;
+    border-bottom: $line-gray-1;
+    font-size: $header-font-size;
+
+    .header-title {
+        padding: 10px;
+        color: $black-font;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-icon {
+        color: $grey;
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    .profile-img-size {
+        height: 40px;
+        width: 40px;
+        size: $profile-img-size;
+        border-radius: $rounded-circle;
+    }
+
+    .profile-name {
+        padding: 20px;
+    }
+
+    .main-title {
+        padding: 10px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-title-icon {
+        font-size: 1rem;
+        color: $grey;
+        z-index: 1;
+    }
+
+    .main-title-text {
+        font-size: medium;
+    }
+}

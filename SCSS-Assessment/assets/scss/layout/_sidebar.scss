@@ -1,0 +1,75 @@
+.sidebar {
+    background-color: $white;
+    width: 250px;
+    position: relative;
+    transition: 0.4s all;
+
+    ul {
+        list-style-type: none;
+
+        li {
+            padding: 15px;
+
+            &:hover {
+                color: $primary;
+                background-color: rgba($primary, 0.1);
+            }
+        }
+    }
+
+    .nav-toggle {
+        position: absolute;
+        left: 100%;
+
+        .icon-gray {
+            display: block;
+            transform: rotate(180deg);
+        }
+    }
+
+    .sidebar-icons {
+        font-size: $sidebar-font-size;
+        padding: 20px;
+        color: $grey;
+        opacity: 1;
+        visibility: visible;
+        transition: 0.4s all;
+
+        .sidebar-icons-text {
+            width: 10%;
+            font-size: small;
+        }
+    }
+
+    .nav-general {
+        padding: 20px;
+    }
+    .nav-others {
+        padding: 20px;
+    }
+}
+
+#toggleNav {
+    display: none;
+    &:checked {
+        & + .sidebar {
+            width: 0;
+            transform: translateX(-100%);
+
+            .sidebar-icons {
+                transform: translateX(100%);
+                opacity: 0;
+                visibility: hidden;
+            }
+            .sidebar-icons-text {
+                transform: translateX(100%);
+                opacity: 0;
+                visibility: hidden;
+            }
+            h4 {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+}

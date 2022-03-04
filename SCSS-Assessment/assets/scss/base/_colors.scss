@@ -1,0 +1,44 @@
+// Primary-green Color
+$primary: #00b11c;
+
+// Secondary-blue Color
+$secondary: #419af2;
+
+// Warning-yellow color
+$warning: #f68b29;
+
+// Danger-red color
+$danger: #ea6262;
+
+// Dollar-purple color
+$purple: #6a69ff;
+
+// Success-green color
+$success: #0bb46d;
+
+// White color shades
+$light: #fafafa;
+$white: #ffffff;
+
+// Icon color
+$grey: #818181;
+
+// line color
+$grey-line: $grey;
+
+// Background color
+$body-bg: $white;
+
+// Font color
+$green-font: #1d9e35;
+$grey-font: #6a6a73;
+$table-font: #36383e;
+$table-H-font: #6a6970;
+$black-font: #030718;
+
+// Button Text color
+$btn-text-primary: $white;
+$crad-text-grey: $grey-font;
+
+// Color map
+$theme-colors: ( "primary": $primary,"success": $success, "secondary": $secondary, "white": $white, "grey": $grey, "light": $light, "purple": $purple, "danger": $danger, "warning": $warning);

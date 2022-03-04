@@ -1,0 +1,21 @@
+#00b11c filter button
+#ea6262 red
+#6a69ff purple
+#f68b29 yellow
+#0bb46d icon green
+#419af2 blue icon
+
+#818181 icon grey
+
+
+
+#6a6a73 grey font
+#1d9e35 font green
+
+#030718 black font
+
+background #fafafa light
+#ffffff white
+
+#6a6970 table heading fonts
+#36383e font table data

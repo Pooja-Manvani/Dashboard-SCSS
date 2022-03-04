@@ -1,0 +1,19 @@
+// // Button styles goes here
+
+.btn{
+    background-color: $primary;
+    color: $white;
+    font-size: medium;
+    outline-color: none;
+    outline: 0px;
+    border: none;
+    height: 45px;
+    width: 120px;
+    border-radius: $border-radius;
+}
+
+.btn-icon{
+    size: $font-size-base;
+    padding-right: 10px;
+    justify-content: center;
+}

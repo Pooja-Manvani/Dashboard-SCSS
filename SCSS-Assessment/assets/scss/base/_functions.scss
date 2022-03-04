@@ -1,0 +1,50 @@
+// Function styles goes here
+
+@each $key, $val in $theme-colors {
+    .text-#{$key} {
+      color: $val;
+    }
+  }
+
+  @each $key, $val in $theme-colors {
+    .icon-#{$key} {
+      color: $val;
+    }
+  }
+  
+  @each $key, $val in $theme-colors {
+    .icon-card-#{$key} {
+      color: $val;
+      background-color: rgba($val,0.1);
+      
+    }
+  }
+  @each $key, $val in $theme-colors{
+    .icon-card-#{$key}{
+      &:hover{
+        background-color: lighten($val,5%);
+
+        .card,.inner-card,.card-title-text,.header-text{
+        color: $light;
+        }
+        .inner-card{
+          background-color: lighten($val,4%)
+        }
+        .card{
+          transition: all;
+        }
+  
+      }
+    }
+}
+ 
+@each $key, $val in $theme-colors {
+  .type-#{$key} {
+    color: $val;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: lighten($val,30%);
+    border-radius: 20px;
+    
+  }
+}
